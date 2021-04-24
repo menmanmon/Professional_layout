@@ -91,8 +91,10 @@ body {
     height: 39px;
     border-radius: 0 3px 3px 0;
     border: 1px solid #e6e6e6;
+    border-left: none;
     background-color: #ffffff;
     outline: none;
+    cursor: pointer;
 }
 
 .fa-check-square {
@@ -138,7 +140,9 @@ body {
     background-color: #cdcdcc;
     background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
     border: 1px solid #e6e6e6;
+    border-right: none;
     border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
 }
 
 .browse__sum::-webkit-details-marker {
@@ -225,6 +229,8 @@ body {
     margin-left: 26px;
     border: 1px solid #ffffff;
     transition-duration: 0.3s;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .cart__sum:hover {
@@ -696,7 +702,7 @@ body {
     transition-duration: 0.3s;
 }
 
-.product__link {
+.prod__link {
     display: block;
     text-decoration: none;
 }
@@ -776,6 +782,7 @@ body {
     color: #ffffff;
     transition-duration: 0.3s;
     border: 1px solid #f16d7f;
+    border-radius: 3px;
 }
 
 .all-product:hover {
@@ -1568,14 +1575,11 @@ body {
     padding: 0 39px 39px 39px;
 }
 
-<<<<<<< HEAD
 .checkout__box {
     padding-top: 93px;
     padding-bottom: 93px;
 }
 
-=======
->>>>>>> lesson-1
 .checkout__sum {
     font-size: 16px;
     line-height: 1.2;
@@ -1586,6 +1590,7 @@ body {
     padding-bottom: 25px;
     outline: none;
     border-top: 1px solid #e8e8e8;
+    cursor: pointer;
 }
 
 .checkout__det > .checkout__sum {
@@ -1596,13 +1601,10 @@ body {
     display: none;
 }
 
-<<<<<<< HEAD
 .last-det {
     border-bottom: 1px solid #e8e8e8;
 }
 
-=======
->>>>>>> lesson-1
 .checkout__heading {
     font-size: 13px;
     line-height: 1.2;
@@ -1659,10 +1661,9 @@ body {
     color: #4a4a4a;
     padding: 19px 53px;
     outline: none;
-<<<<<<< HEAD
     margin-top: 32px;
-=======
->>>>>>> lesson-1
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .checkout_btn:hover {
@@ -1696,7 +1697,6 @@ body {
     padding-left: 20px;
     font-size: 20px;
     box-sizing: border-box;
-<<<<<<< HEAD
     outline: none;
 }
 
@@ -1730,6 +1730,7 @@ body {
     margin-bottom: 22px;
     width: 243px;
     padding-left: 11px;
+    cursor: pointer;
 }
 
 .proceed__sum:hover {
@@ -1771,11 +1772,11 @@ body {
     background-color: #f3f3f3;
     display: flex;
     align-items: center;
+    margin-top: 41px;
 }
 
 .sort-select {
-    width: 90px;
-    height: 30px;
+    padding: 0 7px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     font-size: 14px;
@@ -1787,10 +1788,10 @@ body {
 }
 
 .sort {
-    width: 67px;
-    height: 30px;
+    padding: 0 12px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
+    border-right: none;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -1816,6 +1817,159 @@ body {
 
 .pc_width {
     width: 263px;
-=======
->>>>>>> lesson-1
 }
+
+.product__feature {
+    width: 262px;
+}
+
+.product__feature-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__feature-heading {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6f6e6e;
+    padding-bottom: 25px;
+}
+
+.product__feature-text {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+}
+
+.product__feature-span {
+    color: #dfdfdf;
+}
+
+#range {
+    width: 262px;
+}
+
+.range-price {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+}
+
+.price-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-size {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6f6e6e;
+    padding-left: 5px;
+}
+
+.product__feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px;
+}
+
+.bottom__info {
+    height: 341px;
+    background-color: #222224;
+    display: flex;
+}
+
+.bottom__info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottom__info-item {
+    text-align: center;
+}
+
+.bottom__info-heading {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+    padding-top: 37px;
+    padding-bottom: 17px;
+}
+
+.bottom__info-text {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+    width: 330px;
+}
+
+.view-link {
+    text-decoration: none;
+    padding: 10px 45px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ef5b70;
+    border: 1px solid #ef5b70;
+    border-radius: 3px;
+}
+
+.pagination-box {
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination {
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.view-link:hover {
+    color: #ffffff;
+    background-color: #ef5b70;
+    border: 1px solid #ef5b70;
+}
+
+.pagination-ul {
+    list-style-type: none;
+    padding: 10px 15px;
+}
+
+.pagination-ul:last-child {
+    padding-right: 0;
+}
+
+.page-item {
+    display: inline;
+    padding-right: 17px;
+}
+
+.page-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #c4c4c4;
+}
+
+.first-pl {
+    color: #ef5b70;
+}
+
+.page-link:hover {
+    color: #ef5b70;
+}
+
