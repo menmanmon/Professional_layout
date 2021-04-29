@@ -6,7 +6,7 @@ body
     font-family: 'Lato', sans-serif
 
 .container
-    width: 1140px
+    max-width: 1140px
     margin: 0 auto
 
 .head
@@ -18,6 +18,7 @@ body
     &-box
         display: flex
         justify-content: space-between
+        width: 100%
 
     &-left
         width: 100px
@@ -37,20 +38,30 @@ body
 
 .banner
     background-color: #F1E4E6
-    height: 764px
-    display: flex
+    max-height: 764px
+    width: 100%
     margin-bottom: 65px
 
+    &-container
+        max-width: 1140px
+        max-height: 764px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 45% 55%
+        grid-template-rows: 100%
+
+    &-img-box
+        max-height: 764px
+
     &-img
+        display: block
         width: 100%
 
     &-text
         height: 92px
-        width: 405px
-        margin-top: 25%
-        float: left
         padding-left: 12px
         border-left: 12px solid #f16d7f
+        margin-top: 37%
 
 .brand
     font-weight: 900
@@ -78,73 +89,299 @@ body
     display: flex
     flex-wrap: wrap
     padding-bottom: 56px
+
+    &-bottom-photo:hover .offer-top-img
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        filter: brightness(50%)
+
     &-top
         width: 100%
         display: flex
         justify-content: space-between
         margin-bottom: 25px
 
+        &-link
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+
+        &-text
+            position: absolute
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            &-p1
+                font-size: 16px
+                line-height: 19px
+                font-weight: 400
+                color: #FFFFFF
+
+            &-p2
+                font-size: 24px
+                line-height: 29px
+                font-weight: 700
+                color: #F16D7F
+
         &-photo
             width: 32%
+            display: flex
+            &:hover .offer-top-img
+                box-shadow: 0 0 10px rgba(0,0,0,0.5)
+                filter: brightness(50%)
 
         &-img
             width: 100%
             transition-duration: 0.25s
-            &:hover
-                box-shadow: 0 0 10px rgba(0,0,0,0.5)
-                filter: brightness(50%)
+            display: block
 
-.product-top
-    text-align: center
-    margin-bottom: 48px
+.product
+    &-top
+        text-align: center
+        margin-bottom: 48px
 
-.product-heading
-    font-size: 30px
-    line-height: 36px
-    font-weight: 400
-    line-height: 36px
-    color: #222222
+    &-heading
+        font-size: 30px
+        line-height: 36px
+        font-weight: 400
+        line-height: 36px
+        color: #222222
 
-.product-p
-    font-size: 14px
-    line-height: 17px
-    color: #9F9F9F
+    &-p
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
 
-.product-card
-    position: relative
-    width: 32%
+    &-cart-box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
 
-.product-link
-    display: block
+    &-card
+        position: relative
+        width: 32%
+        filter: brightness(100%)
+        margin-bottom: 2%
+        &:hover .product-img
+            filter: brightness(50%)
+        &:hover .box-add
+            opacity: 1
+
+    &-link
+        display: block
+        text-decoration: none
+
+    &-img
+        display: block
+        width: 100%
+        transition-duration: 0.25s
+
+    &-text-box
+        background-color: #F8F8F8
+
+    &-text-mg
+        padding: 25px 28px 20px 16px
+        box-sizing: border-box
+
+    &-heading
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+        font-weight: 400
+        line-height: 15.6px
+        padding-bottom: 12px
+
+    &-text
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        padding-bottom: 18px
+
+    &-price
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+
+    &-btn
+        display: flex
+        justify-content: center
+        padding-top: 2%
+        padding-bottom: 6%
+
+    &-btn-link
+        text-decoration: none
+        font-size: 16px
+        line-height: 19px
+        color: #FF6A6A
+        border: 1px solid #FF6A6A
+        padding: 14px 38px
+        transition-duration: 0.25s
+
+        &:hover
+            color: #FFffff
+            background: #FF6A6A
+            border: 1px solid #FF6A6A
+
+.box-add
+    position: absolute
+    top: 30%
+    width: 100%
+    justify-content: center
+    display: flex
+    opacity: 0
+    transition-duration: 0.25s
+
+.add
+    border: 1px solid #ffffff
+    padding: 8px 12px
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
     text-decoration: none
+    display: flex
+    align-items: center
+    transition-duration: 0.25s
+    &:hover
+        box-shadow: 0 0 10px #fff
 
-.product-img
+.bottom-info
+    height: 341px
+    background-color: #222224
+    display: flex
+
+    &-box
+        display: flex
+        align-items: center
+        justify-content: space-around
+
+    &-item
+        text-align: center
+        width: 28%
+
+    &-heading
+        font-size: 20px
+        line-height: 1.2
+        font-weight: 700
+        letter-spacing: 0.025em
+        color: #fbfbfb
+        padding-top: 37px
+        padding-bottom: 17px
+
+    &-text
+        font-size: 14px
+        line-height: 23px
+        font-weight: 300
+        letter-spacing: 0.025em
+        color: #fbfbfb
+        width: 100%
+
+.subscribe
+    height: 438px
+    display: flex
+    justify-content: center
+    background: url(img/subscribe.png) no-repeat
+    background-position: center
+
+.subscribe-box
+    max-width: 1140px
+    margin: 0 auto
+    text-align: center
+    display: flex
+    justify-content: space-between
+
+.subscribe-banner
     display: block
+    text-align: center
+    height: 100%
+
+.subscribe__right-text
+    color: #222224
+    font-size: 24px
+    font-weight: 700
+    letter-spacing: 0.6px
+    text-transform: uppercase
+    text-align: center
+    padding-bottom: 35px
+    line-height: 167.2%
+
+.subscribe__right-span
+    font-size: 18px
+    letter-spacing: 0.35px
+    font-weight: 400
+
+.your-email
+    width: 284px
+    height: 46px
+    border-radius: 23px 0 0 23px
+    background-color: #e1e1e1
+    padding-left: 28px
+    box-sizing: border-box
+    outline: none
+    border: none
+
+.subscribe__btn
+    width: 104px
+    height: 46px
+    border-radius: 0 23px 23px 0
+    background-color: #f16d7f
+    outline: none
+    border: none
+    transition-duration: 0.3s
+    cursor: pointer
+
+.subscribe-left
+    width: 30%
+    margin-top: 10%
+
+.subscribe-right
+    margin-top: 12%
+    margin-right: 5%
+
+footer
+    height: 79px
+    background-color: #222224
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.footer-flex
+    display: flex
+    align-items: center
+    justify-content: space-between
     width: 100%
 
-.product-text-box
-    background-color: #F8F8F8
-
-.product-text-mg
-    padding: 25px 28px 20px 16px
-    box-sizing: border-box
-
-.product-heading
-    font-size: 13px
-    line-height: 16px
-    color: #000000
-    font-weight: 400
-    line-height: 15.6px
-    padding-bottom: 12px
-
-.product-text
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    color: #5D5D5D
-    padding-bottom: 18px
-
-.product-price
+.footer-left-text
     font-size: 16px
     line-height: 19px
-    color: #F16D7F
+    color: #FBFBFB
+
+.footer-right
+    display: grid
+    grid-template-columns: 32px 32px 32px 32px
+    grid-column-gap: 6px
+
+.footer-icon
+    width: 32px
+    height: 32px
+    background-color: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    transition-duration: 0.25s
+
+.footer-right-link
+    text-decoration: none
+    display: block
+
+    &:hover .fab
+        color: #ffffff
+
+    &:hover .footer-icon
+        background-color: #F16D7F
+
+.fab
+    color: #000000
+    font-size: 18px
+    transition-duration: 0.25s
