@@ -6,8 +6,8 @@ body
     font-family: 'Lato', sans-serif
 
 .container
-    max-width: 1140px
-    margin: 0 auto
+    margin-left: 10%
+    margin-right: 10%
 
 .head
     height: 75px
@@ -36,6 +36,53 @@ body
     color: #E8E8E8
     font-size: 25px
 
+.menu
+    position: absolute
+    width: 232px
+    height: 100%
+    background: #ffffff
+    right: 0
+    z-index: 1
+    display: none
+
+    &-containet
+        padding: 16px 16px 16px 34px
+
+    &-exit
+        text-align: right
+
+    &-heading
+        font-size: 14px
+        line-height: 17px
+        flex-wrap: 700
+        color: #000000
+
+    &-heading2
+        font-size: 14px
+        flex-wrap: 400
+        line-height: 17px
+        color: #F16D7F
+        padding-bottom: 12px
+        padding-top: 20px
+
+    &-li
+        list-style-type: none
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        padding-bottom: 11px
+        margin-left: 15px
+
+    &-flex
+        display: flex
+        flex-wrap: wrap
+
+    &-group
+        width: 126px
+
+.fa-times
+    cursor: pointer
+
 .banner
     background-color: #F1E4E6
     max-height: 764px
@@ -49,16 +96,18 @@ body
         display: grid
         grid-template-columns: 45% 55%
         grid-template-rows: 100%
+        position: relative
 
     &-img-box
         max-height: 764px
+        padding-left: 20%
 
     &-img
         display: block
         width: 100%
 
     &-text
-        height: 92px
+        height: 85px
         padding-left: 12px
         border-left: 12px solid #f16d7f
         margin-top: 37%
@@ -153,7 +202,7 @@ body
         line-height: 17px
         color: #9F9F9F
 
-    &-cart-box
+    &-card-box
         display: flex
         flex-wrap: wrap
         justify-content: space-between
@@ -290,13 +339,14 @@ body
     text-align: center
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
 
 .subscribe-banner
     display: block
     text-align: center
     height: 100%
 
-.subscribe__right-text
+.subscribe-right-text
     color: #222224
     font-size: 24px
     font-weight: 700
@@ -306,7 +356,7 @@ body
     padding-bottom: 35px
     line-height: 167.2%
 
-.subscribe__right-span
+.subscribe-right-span
     font-size: 18px
     letter-spacing: 0.35px
     font-weight: 400
@@ -321,19 +371,26 @@ body
     outline: none
     border: none
 
-.subscribe__btn
+.subscribe-btn
     width: 104px
     height: 46px
     border-radius: 0 23px 23px 0
     background-color: #f16d7f
+    color: #ffffff
     outline: none
     border: none
     transition-duration: 0.3s
     cursor: pointer
+    &:hover
+        background-color: #ffffff
+        color: #f16d7f
 
 .subscribe-left
     width: 30%
     margin-top: 10%
+
+    &-img
+        padding-bottom: 5%
 
 .subscribe-right
     margin-top: 12%
@@ -385,3 +442,99 @@ footer
     color: #000000
     font-size: 18px
     transition-duration: 0.25s
+
+@media (max-width: 768px)
+    .container
+
+        margin-left: 2%
+        margin-right: 2%
+
+    .brand
+        font-size: 44px
+        line-height: 53px
+
+    .text-fashion
+        font-size: 24px
+        line-height: 28px
+
+    .span-fashion
+        font-size: 24px
+        line-height: 28px
+
+    .banner
+        margin-bottom: 20px
+
+    .offer
+        padding-bottom: 155px
+
+    .product-card
+        width: 49%
+
+    .product-btn
+        padding-bottom: 10%
+
+    .bottom-info
+        height: 665px
+        justify-content: center
+
+    .bottom-info-box
+        flex-direction: column
+        justify-content: space-around
+        padding-top: 3%
+        padding-bottom: 3%
+
+    .bottom-info-item
+        width: 53%
+
+    .subscribe
+        height: 590px
+        background-color: #f1f1f1
+        background-position: bottom
+
+    .subscribe-box
+        justify-content: center
+
+    .subscribe-left
+        width: 40%
+        margin-top: 8%
+
+    .subscribe-right
+        width: 98%
+        padding-top: 7%
+        height: 300px
+        margin-top: 0
+        margin-right: 0
+
+    .subscribe-right-text
+        padding-bottom: 27px
+
+    .footer-flex
+        margin-left: 5%
+        margin-right: 5%
+
+@media (max-width: 376px)
+    .container
+        margin-left: 2%
+        margin-right: 2%
+
+    .banner-img
+        display: none
+
+    .banner-text
+        height: 73px
+        margin-left: -50%
+        margin-top: 50%
+        margin-bottom: 50%
+
+    .brand
+        font-weight: 900
+        font-size: 38px
+        line-height: 46px
+
+    .text-fashion
+        font-size: 20px
+        line-height: 24px
+
+    .span-fashion
+        font-size: 20px
+        line-height: 24px
