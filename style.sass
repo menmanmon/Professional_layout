@@ -138,6 +138,7 @@ body
     display: flex
     flex-wrap: wrap
     padding-bottom: 56px
+    justify-content: center
 
     &-bottom-photo:hover .offer-top-img
         box-shadow: 0 0 10px rgba(0,0,0,0.5)
@@ -147,7 +148,8 @@ body
         width: 100%
         display: flex
         justify-content: space-between
-        margin-bottom: 25px
+        margin-bottom: 2%
+        flex-wrap: wrap
 
         &-link
             position: relative
@@ -188,7 +190,7 @@ body
 .product
     &-top
         text-align: center
-        margin-bottom: 48px
+        margin-bottom: 4%
 
     &-heading
         font-size: 30px
@@ -353,8 +355,7 @@ body
     letter-spacing: 0.6px
     text-transform: uppercase
     text-align: center
-    padding-bottom: 35px
-    line-height: 167.2%
+    padding-bottom: 10%
 
 .subscribe-right-span
     font-size: 18px
@@ -396,12 +397,11 @@ body
     margin-top: 12%
     margin-right: 5%
 
-footer
+.footer-bottom
     height: 79px
     background-color: #222224
     display: flex
     align-items: center
-    justify-content: space-between
 
 .footer-flex
     display: flex
@@ -445,7 +445,6 @@ footer
 
 @media (max-width: 768px)
     .container
-
         margin-left: 2%
         margin-right: 2%
 
@@ -505,17 +504,37 @@ footer
         margin-top: 0
         margin-right: 0
 
+    .your-email
+        width: 70%
+
     .subscribe-right-text
-        padding-bottom: 27px
+        padding-bottom: 4%
 
     .footer-flex
         margin-left: 5%
         margin-right: 5%
 
 @media (max-width: 376px)
+
     .container
         margin-left: 2%
         margin-right: 2%
+
+    .head-box
+        margin-left: 4%
+        margin-right: 4%
+
+    .head-right
+        flex-direction: row-reverse
+
+    .user-link
+        display: none
+
+    .cart-link
+        display: none
+
+    .banner
+        margin-bottom: 17%
 
     .banner-img
         display: none
@@ -537,4 +556,78 @@ footer
 
     .span-fashion
         font-size: 20px
-        line-height: 24px
+        line-height:
+
+    .offer
+        padding-bottom: 12%
+
+    .offer-top
+        justify-content: center
+        margin-bottom: 0
+
+    .offer-top-photo
+        width: 100%
+        margin-bottom: 8%
+
+    .offer-bottom-photo
+        height: 111px
+        overflow: hidden
+
+    .offer-top-img
+        object-fit: none
+        height: 100%
+        width: 100%
+
+    .offer-top-link
+        height: 100%
+        width: 100%
+
+    .product-top
+        margin-bottom: 13%
+
+    .product-card
+        width: 100%
+
+    .product-btn
+        padding-top: 9%
+        padding-bottom: 24%
+
+    .bottom-info-item
+        width: 90%
+
+    .bottom-info-box
+        padding-top: 6%
+        padding-bottom: 12%
+
+    .subscribe
+        background: url(img/subscribe_2.png) no-repeat
+        height: 550px
+
+    .subscribe-left
+        margin-top: 15%
+        width: 80%
+
+    .subscribe-right
+        margin-top: 0
+
+    .subscribe-right-inside
+        padding-top: 12%
+
+    .subscribe-right-span
+        font-size: 14px
+
+    .your-email
+        width: 60%
+
+    .footer-bottom
+        align-items: flex-end
+        height: 134px
+
+    .footer-right
+        padding-bottom: 10%
+
+    .footer-left
+        padding-bottom: 2%
+
+    .footer-flex
+        flex-direction: column-reverse
