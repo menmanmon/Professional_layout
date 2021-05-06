@@ -36,10 +36,13 @@ body
     color: #E8E8E8
     font-size: 25px
 
+.m-link:hover .menu
+
+    display: flex
+
 .menu
     position: absolute
     width: 232px
-    height: 100%
     background: #ffffff
     right: 0
     z-index: 1
@@ -54,24 +57,25 @@ body
     &-heading
         font-size: 14px
         line-height: 17px
-        flex-wrap: 700
+        width: 100%
         color: #000000
 
     &-heading2
         font-size: 14px
-        flex-wrap: 400
         line-height: 17px
         color: #F16D7F
-        padding-bottom: 12px
-        padding-top: 20px
+        margin-bottom: 12px
+        margin-top: 20px
 
     &-li
         list-style-type: none
+        margin-bottom: 5px
+        margin-left: 15px
+
+    &-link
         font-size: 14px
         line-height: 17px
         color: #6F6E6E
-        padding-bottom: 11px
-        margin-left: 15px
 
     &-flex
         display: flex
@@ -79,6 +83,9 @@ body
 
     &-group
         width: 126px
+
+.menu a
+    text-decoration: none
 
 .fa-times
     cursor: pointer
@@ -110,7 +117,7 @@ body
         height: 85px
         padding-left: 12px
         border-left: 12px solid #f16d7f
-        margin-top: 37%
+        margin-top: 30%
 
 .brand
     font-weight: 900
@@ -168,12 +175,14 @@ body
                 line-height: 19px
                 font-weight: 400
                 color: #FFFFFF
+                text-align: center
 
             &-p2
                 font-size: 24px
                 line-height: 29px
                 font-weight: 700
                 color: #F16D7F
+                text-align: center
 
         &-photo
             width: 32%
@@ -505,7 +514,7 @@ body
         margin-right: 0
 
     .your-email
-        width: 70%
+        width: 40%
 
     .subscribe-right-text
         padding-bottom: 4%
@@ -513,6 +522,11 @@ body
     .footer-flex
         margin-left: 5%
         margin-right: 5%
+
+@media (min-width: 376px) and (max-width: 510px)
+    .banner-text
+        margin-top: 7%
+        height: 160px
 
 @media (max-width: 376px)
 
